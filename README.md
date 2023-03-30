@@ -6,6 +6,8 @@ sudo apt-get install libnotify-bin
 ```
 3. Alterar o local onde irá salvando o log https://github.com/matheuzsr/ponto-bot/blob/1a04100600c17373893f09b89e9e5b414f53c542/src/NotifyCommand.ts#L18
 
+4. Depois de tudo configurado, basta rodar ` bash scripts.sh`
+
 # Scripts
 - dev: `yarn start:dev`
 - build: `yarn build`
