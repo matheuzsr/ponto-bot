@@ -22,11 +22,7 @@ export default class MarcarPontoCommand extends AbstractBootCommand {
       );
       await marcarPontoButton?.click();
 
-      this.page.screenshot({ path: `page-button-register-${new Date()}.png` });
-
-      // const confirmarMarcarPontoButton = await framePonto?.waitForSelector(
-      //   ".jss10 + div + div > button:last-child"
-      // );
+      // TODO: Alterar aqui de "first-child" p/ "last-child"
       const confirmarMarcarPontoButton = await framePonto?.waitForSelector(
         ".jss10 + div + div > button:first-child"
       );
@@ -37,6 +33,12 @@ export default class MarcarPontoCommand extends AbstractBootCommand {
       const ultimosPontos = (await framePonto?.evaluate(() => {
         return document.querySelector(".people-infos__punches")?.textContent;
       })) as string;
+
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+
+      await this.page.screenshot({
+        path: `.output/page-button-register-${new Date()}.png`,
+      });
 
       return ultimosPontos;
     } catch (e) {

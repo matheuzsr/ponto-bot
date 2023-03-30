@@ -15,8 +15,8 @@ export default class MarcarPontoCommand {
       console.log(`Processo filho saiu com o código ${code}`);
     });
     
-    //TODO: Melhorar para pegar do env
-    fs.appendFileSync('/home/logcomex/projects/ponto-bot/log.txt', `${title} - ${this.getCurrentDate()} | ${message}\n`)
+    // TODO: Alterar aqui de acordo com o local do log, talvez usar __dirname
+    // fs.appendFileSync('/home/logcomex/projects/ponto-bot/log.txt', `${title} - ${this.getCurrentDate()} | ${message}\n`)
   }
 
   public getCurrentDate() {
