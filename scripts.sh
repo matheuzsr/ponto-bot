@@ -5,6 +5,6 @@ cd /home/logcomex/projects/ponto-bot
 
 node dist
 
- cd .output/
+cd .output/
 
- xdg-open "$(ls -1tr | tail -1)"
+xdg-open "$(ls -1tr | tail -1)"
