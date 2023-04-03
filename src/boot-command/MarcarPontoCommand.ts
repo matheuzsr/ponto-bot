@@ -37,7 +37,7 @@ export default class MarcarPontoCommand extends AbstractBootCommand {
       await new Promise((resolve) => setTimeout(resolve, 2000));
 
       await this.page.screenshot({
-        path: `.output/page-button-register-${new Date()}.png`,
+        path: `.output/${new Date().getTime()}-page-button-register.png`,
       });
 
       return ultimosPontos;
