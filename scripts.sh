@@ -1,5 +1,7 @@
 #!/bin/bash
 
+git pull origin main
+
 # TODO: Alterar aqui o caminho do script
 cd /home/logcomex/projects/ponto-bot
 

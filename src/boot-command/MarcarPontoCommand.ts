@@ -24,7 +24,7 @@ export default class MarcarPontoCommand extends AbstractBootCommand {
 
       // TODO: Alterar aqui de "first-child" p/ "last-child"
       const confirmarMarcarPontoButton = await framePonto?.waitForSelector(
-        ".jss9 + div + div > button:first-child"
+        "div[role='presentation'] div:nth-child(3) div:nth-child(4) button:first-child"
       );
       await confirmarMarcarPontoButton?.click();
 
