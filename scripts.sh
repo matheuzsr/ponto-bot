@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # TODO: Alterar aqui o caminho do script
-cd /home/logcomex/projects/ponto-bot
+cd /home/logcomex/projects/test-marcacao
 
 git pull origin main
 

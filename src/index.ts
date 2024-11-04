@@ -16,7 +16,7 @@ async function robo() {
     headless: true,
     defaultViewport: null,
     args: [`--window-size=${1920},${1080}`],
-    timeout: 250000,
+    timeout: 50000,
   });
 
   const page = await browser.newPage();
